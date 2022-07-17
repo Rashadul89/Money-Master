@@ -1,0 +1,31 @@
+body{
+    background-color: #E5E5E5;
+}
+.cash-head{
+  background-color: rgb(237, 237, 237);
+}
+#cashbox-head{
+    font-family: 'Montserrat', sans-serif!important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color:#31A5AC ;
+    margin-top: 37px;
+    margin-bottom: 38px;
+};
+/* .imgSize {
+    width: 750px;
+    height: 815px;
+}; */
+.formInput{
+    margin-left: 20px;
+}
+
+/* .content {
+    position:relative ;
+  }
+  #right-panel-link {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  } */
