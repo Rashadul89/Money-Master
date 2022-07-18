@@ -1,32 +1,32 @@
+document.getElementById('calculate-btn').addEventListener('click', function () {
+    // for food expenses calculation
+    const expensesFoodInput = document.getElementById('expenses-food');
+    const expensesFoodValueText = expensesFoodInput.value;
+    const expensesFoodValue = parseFloat(expensesFoodValueText);
 
-// document.getElementById('calculate-btn').addEventListener('click',function(){
-//     // for income calculation 
-//     const incomeInput=document.getElementById('total-income');
-//     const eincomeValueText=incomeInput.value;
-//     const incomeValue=parseFloat(eincomeValueText);
-     
-//    //   get value from Income inputs
-//    const totalIncome=document.getElementById('income-balance');
-//    const totalIncomeText=totalIncome.innerText;
-//    const totalMainIncome=parseFloat(totalIncomeText);
-   
-//    totalIncome.innerText =totalMainIncome+incomeValue;
-//    // clear input field 
-//    incomeInput.value= ' ';
-// });
-document.getElementById('calculate-btn').addEventListener('click',function(){
-    
-    // for expenses calculation
- const expensesFoodInput=document.getElementById('expenses-food');
- const expenceFoodValueText=expensesFoodInput.value;
- const expenceFoodValue=parseFloat(expenceFoodValueText);
-  
-//   get value from food inputs
-const totalExpences=document.getElementById('total-expenses');
-const totalExpencesText=totalExpences.innerText;
-const totalMainExpenses=parseFloat(totalExpencesText);
+    //   get value from Expenses
+    const totalExpences = document.getElementById('total-expenses');
+    const totalExpencesText = totalExpences.innerText;
+    const totalMainExpenses = parseFloat(totalExpencesText);
 
-totalExpences.innerText =totalMainExpenses+expenceFoodValue;
-// clear input field 
-expensesFoodInput.value= ' ';
+    // clear input field 
+    expensesFoodInput.value = ' ';
+
+    // for rent expenses calculation
+    const expensesRentInput = document.getElementById('expenses-rent');
+    const expensesRentValueText = expensesRentInput.value;
+    const expensesRentValue = parseFloat(expensesRentValueText);
+    // clear input field 
+    expensesRentInput.value = ' ';
+    // for Clothes expenses calculation
+    const expensesClothesInput = document.getElementById('expenses-clothes');
+    const expensesClothesValueText = expensesClothesInput.value;
+    const expensesClothesValue = parseFloat(expensesClothesValueText);
+    // clear input field 
+    expensesClothesInput.value = ' ';
+
+    //    adding for expenses
+    const foodRentValue = expensesFoodValue + expensesRentValue + expensesClothesValue;
+    totalExpences.innerText = totalMainExpenses + foodRentValue;
+
 });
