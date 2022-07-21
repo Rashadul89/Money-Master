@@ -42,7 +42,7 @@
                         <div class="col-lg-4 col-sm-12">
                             <div class="formInput ">
                                 <h4 class="text-center my-3 fw-bold">Income</h4>
-                                <p class=" fw-bold w-25"> Income: <input id="total-income" type="text"></p>
+                                <p class=" fw-bold w-25"> Income: <input id="income-filed" type="text"></p>
                                 <h4 class="text-center my-3 fw-bold">Expenses</h4>
                                 <p class=" fw-bold w-25">Food: <input id="expenses-food" type="text"></p>
                                 <p class=" fw-bold w-25">Rent: <input id="expenses-rent" type="text"></p>
@@ -50,11 +50,11 @@
                                 <div class="col-md-12 text-center">
                                     <button id="calculate-btn" type="button" class="btn btn-info">Calculate</button>
                                     <h4 class="text-center my-3 fw-bold">Total Expenses: <span  id="total-expenses">00</span></h4>
-                                    <h4 id="remaining-balance" class="text-center my-3 fw-bold">Balance: <span id="income-balance">00</span></h4>
-                                    <p class=" fw-bold w-25">Save: <input class=" " type="text"></p>%<button
-                                        type="button" class="btn btn-info">Save</button>
-                                    <h3 class="text-center my-2 fw-bold">Saving Amount: 2500</h3>
-                                    <h3 class="text-center my-2 fw-bold">Remaining Balace: 2500</h3>
+                                    <h4 id="remaining-balance" class="text-center my-3 fw-bold">Balance: <span id="balanceAfterExpenses">00</span></h4>
+                                    <p class=" fw-bold w-25">Save: <input id='salaryFiledSaveInput' class=" " type="text"></p>%<button
+                                        type="button" id="save-balanceBtn" class="btn btn-info">Save</button>
+                                    <h3 class="text-center my-2 fw-bold">Saving Amount: <span id="saving-amount">00</span></h3>
+                                    <h3 class="text-center my-2 fw-bold">Remaining Balace:<span id="remaining-amount">00</span></h3>
                                 </div>
                             </div>
                         </div>
