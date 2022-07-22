@@ -40,21 +40,24 @@
                             <img class="img-fluid" src="images/money.png" alt="">
                         </div>
                         <div class="col-lg-4 col-sm-12">
+                            
                             <div class="formInput ">
+                                    <form name="form" action="#" onsubmit="required()">
                                 <h4 class="text-center my-3 fw-bold">Income</h4>
-                                <p class=" fw-bold w-25"> Income: <input id="income-filed" type="text"></p>
-                                <h4 class="text-center my-3 fw-bold">Expenses</h4>
-                                <p class=" fw-bold w-25">Food: <input id="expenses-food" type="text"></p>
-                                <p class=" fw-bold w-25">Rent: <input id="expenses-rent" type="text"></p>
-                                <p class=" fw-bold w-25">Clothes: <input id="expenses-clothes" type="text"></p>
+                                <p class=" fw-bold w-25"> Income: <input id="income-filed" type="text" name="number" required></p>
+                                <h4 class="text-center my-3 fw-bold">Expenses</h4> 
+                                <p class=" fw-bold w-25">Food: <input id="expenses-food" type="text" name="number" required></p>
+                                <p class=" fw-bold w-25">Rent: <input id="expenses-rent" type="text" name="number" required></p>
+                                <p class=" fw-bold w-25">Clothes: <input id="expenses-clothes" type="text" name="number" required></p>
                                 <div class="col-md-12 text-center">
-                                    <button id="calculate-btn" type="button" class="btn btn-info">Calculate</button>
+                                    <button id="calculate-btn" type="submit" value="submit" class="btn btn-info">Calculate</button>
                                     <h4 class="text-center my-3 fw-bold">Total Expenses: <span  id="total-expenses">00</span></h4>
                                     <h4 id="remaining-balance" class="text-center my-3 fw-bold">Balance: <span id="balanceAfterExpenses">00</span></h4>
-                                    <p class=" fw-bold w-25">Save: <input id='salaryFiledSaveInput' class=" " type="text"></p>%<button
-                                        type="button" id="save-balanceBtn" class="btn btn-info">Save</button>
+                                    <p class=" fw-bold w-25">Save: <input id='salaryFiledSaveInput' class=" " type="text" name="number" required></p>%<button
+                                     type="submit" value="submit" id="save-balanceBtn" class="btn btn-info">Save</button>
                                     <h3 class="text-center my-2 fw-bold">Saving Amount: <span id="saving-amount">00</span></h3>
                                     <h3 class="text-center my-2 fw-bold">Remaining Balace:<span id="remaining-amount">00</span></h3>
+                                </form>
                                 </div>
                             </div>
                         </div>
